@@ -1,0 +1,137 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-aces:before {
+	content: "\E001";
+}
+
+.icon-arrow_l:before {
+	content: "\E002";
+}
+
+.icon-arrow_r:before {
+	content: "\E003";
+}
+
+.icon-biceps:before {
+	content: "\E004";
+}
+
+.icon-biceps_big:before {
+	content: "\E005";
+}
+
+.icon-bubble:before {
+	content: "\E006";
+}
+
+.icon-camera:before {
+	content: "\E007";
+}
+
+.icon-cards:before {
+	content: "\E008";
+}
+
+.icon-check:before {
+	content: "\E009";
+}
+
+.icon-clock:before {
+	content: "\E00A";
+}
+
+.icon-cloud:before {
+	content: "\E00B";
+}
+
+.icon-disco_ball_big:before {
+	content: "\E00C";
+}
+
+.icon-eye:before {
+	content: "\E00D";
+}
+
+.icon-facebook:before {
+	content: "\E00E";
+}
+
+.icon-flag:before {
+	content: "\E00F";
+}
+
+.icon-flag_big:before {
+	content: "\E010";
+}
+
+.icon-globe:before {
+	content: "\E011";
+}
+
+.icon-hand_shake_big:before {
+	content: "\E012";
+}
+
+.icon-helmet:before {
+	content: "\E013";
+}
+
+.icon-helmet_big:before {
+	content: "\E014";
+}
+
+.icon-lips:before {
+	content: "\E015";
+}
+
+.icon-mail:before {
+	content: "\E016";
+}
+
+.icon-notes:before {
+	content: "\E017";
+}
+
+.icon-pen:before {
+	content: "\E018";
+}
+
+.icon-pens:before {
+	content: "\E019";
+}
+
+.icon-phone:before {
+	content: "\E01A";
+}
+
+.icon-stars:before {
+	content: "\E01B";
+}
+
+.icon-steak_big:before {
+	content: "\E01C";
+}
+
+.icon-youtube:before {
+	content: "\E01D";
+}
