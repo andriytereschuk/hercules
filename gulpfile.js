@@ -4,7 +4,6 @@ var sass        = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var iconfontCss = require('gulp-iconfont-css');
 var iconfont = require('gulp-iconfont');
-var consolidate = require('gulp-consolidate');
 
 
 // Static Server + watching scss/html files
@@ -21,8 +20,8 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("scss/*.scss")
-        .pipe(sass())
-        .pipe(autoprefixer('last 2 version'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer('last 3 versions'))
         .pipe(gulp.dest("css"))
         .pipe(browserSync.stream());
 });

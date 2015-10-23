@@ -1,0 +1,94 @@
+body {
+	font-size: 16px;
+	line-height: 32px;
+	color: $g;
+	font-family: $c;
+	background-color: #fff;
+	min-width: 320px;
+}
+
+a {
+	color: $g;
+	text-decoration: none;
+}
+
+
+//Grid
+//-------------------------------------------------------------------------------------
+
+.row {
+	margin-left: -32px;
+	*zoom: 1;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.row:after {
+ 	clear: both;
+}
+
+[class*="span"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 32px;
+}
+
+.container
+ {
+	width: 1120px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.span12 {
+ 	width: 1120px;
+}
+
+.span11 {
+ 	width: 1024px;
+}
+
+.span10 {
+ 	width: 928px;
+}
+
+.span9 {
+ 	width: 832px;
+}
+
+.span8 {
+ 	width: 736px;
+}
+
+.span7 {
+ 	width: 656px;
+}
+
+.span6 {
+ 	width: 544px;
+}
+
+.span5 {
+ 	width: 448px;
+}
+
+.span4 {
+ 	width: 352px;
+}
+
+.span3 {
+ 	width: 256px;
+}
+
+.span2 {
+ 	width: 160px;
+}
+
+.span1 {
+ 	width: 64px;
+}
