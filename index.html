@@ -10,7 +10,7 @@
 	<meta name="author" content="">
 
 	<!-- TITLE -->
-	<title>Hercules</title>
+	<title>Hercules Trophy Baltics (Vilnius)</title>
 
 	<!-- FAVICON -->
 	<link rel="shortcut icon" href="images/favicon.ico" />
@@ -32,25 +32,34 @@
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<header class="fixed">
+<header id="header">
 	<div class="container">
 		<div class="row">
-			<div class="span1">
-				<a href="" class="logo" title="Hercules trophy">
+			<div class="span2">
+				<a href="#top" class="logo" title="Hercules Trophy Vilnius">
 					<img src="images/logo.png" alt="">
 				</a>
 			</div>
 
-			<div class="span11">
+			<div class="span10">
+				<div class="lang">
+					<div class="curent-lang">En</div>
+					<ul class="langs">
+						<li><a href="index_lt.html">Lt</a></li>
+					</ul>
+				</div>
+
+				<a class="sign-btn" id="signIn" href="http://www.herculestrophy.com/?PageNum=1?PageSet=Logon#&amp;&amp;PageNum=3&amp;PageSet=Logon" target="_blank">Sign in</a>
+
 				<nav>
 					<ul>
-						<li><a href="" class="active">About</a></li>
-						<li><a href="">Why participate</a></li>
-						<li><a href="">Gallery</a></li>
-						<li><a href="">How to join</a></li>
-						<li><a href="">Register</a></li>
-						<li><a href="">For participants</a></li>
-						<li><a href="">Contacts</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#why_participate">Why participate</a></li>
+						<li><a href="#join">How to join</a></li>
+						<li><a href="#register">Register</a></li>
+						<li><a href="#program">For participants</a></li>
+						<li><a href="#contacts">Contacts</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -60,13 +69,62 @@
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<section class="top">
-	
+<section class="top" id="top">
+	<div id="topSlider" class="top-slider swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slide3"></div>
+			<div class="swiper-slide slide2"></div>
+			<div class="swiper-slide slide1"></div>
+			<div class="swiper-slide slide4"></div>
+		</div>
+	</div>
+
+	<div class="top-video">
+		<iframe id="video3" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+		<a href="" id="closeVideo3" title="close video" class="close-video"></a>
+	</div>
+
+	<div class="description">
+		<div class="desc-container">
+			<div class="slogan">
+				<span class="icon icon-blob"></span>
+				<div class="slogan-text1"><span>Come as a</span><br><span>company</span></div>
+				<div class="slogan-text2">Leave as a <br> <b>team</b></div>
+			</div>
+
+			<div class="video-desc">
+				<h1><strong>Hercules Trophy</strong> <span>Vilnius 2016</span></h1>
+				<a id="playVideo3" title="play" href="" class="icon icon-play"></a>
+			</div>
+
+			<div class="desc-bottom">
+
+				<div class="desc-item">
+					<span class="icon icon-blob"></span>
+					<div class="desc-text">
+						1 day - 12 labours
+						<br>
+						teams of 5 -7 members
+					</div>
+				</div>
+
+				<div class="desc-item">
+					<span class="icon icon-blob"></span>
+					<div class="desc-text">
+						European Center
+						<br>
+						Golf Club June 18, 2016
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 </section>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<section class="about">
+<section class="about" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
@@ -86,108 +144,584 @@
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<section class="gallery">
+<section class="gallery" id="gallery">
 	<h1>
 		gallery
 		<span class="icon icon-dash"></span>
 	</h1>
 
 	<!-- Swiper -->
-	<div id="gallery" class="gallery-slider swiper-container">
+	<!-- Swiper -->
+	<div id="gallerySlider" class="gallery-slider swiper-container">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img1.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img2.jpg" alt=""><div></div></a>
+				<a href="images/gallery/img1.jpg" title="Image caption 1" data-lightbox="galery"><img src="images/gallery/thm1.jpg" alt=""></a>
+				<a href="images/gallery/img2.jpg" title="Image caption 2" data-lightbox="galery"><img src="images/gallery/thm2.jpg" alt=""></a>
 			</div>
 
 			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img3.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img4.jpg" alt=""><div></div></a>
+				<a href="images/gallery/img3.jpg" title="Image caption 3" data-lightbox="galery"><img src="images/gallery/thm3.jpg" alt=""></a>
+				<a href="images/gallery/img4.jpg" title="Image caption 4" data-lightbox="galery"><img src="images/gallery/thm4.jpg" alt=""></a>
 			</div>
 
 			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img5.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img6.jpg" alt=""><div></div></a>
+				<a href="images/gallery/img5.jpg" title="Image caption 5" data-lightbox="galery"><img src="images/gallery/thm5.jpg" alt=""></a>
+				<a href="images/gallery/img6.jpg" title="Image caption 6" data-lightbox="galery"><img src="images/gallery/thm6.jpg" alt=""></a>
 			</div>
 
 			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img7.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img8.jpg" alt=""><div></div></a>
+				<a href="images/gallery/img7.jpg" title="Image caption 7" data-lightbox="galery"><img src="images/gallery/thm7.jpg" alt=""></a>
+				<a href="images/gallery/img8.jpg" title="Image caption 8" data-lightbox="galery"><img src="images/gallery/thm8.jpg" alt=""></a>
 			</div>
 
 			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img9.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img10.jpg" alt=""><div></div></a>
+				<a href="images/gallery/img9.jpg" title="Image caption 9" data-lightbox="galery"><img src="images/gallery/thm9.jpg" alt=""></a>
+				<a href="images/gallery/img10.jpg" title="Image caption 10" data-lightbox="galery"><img src="images/gallery/thm10.jpg" alt=""></a>
 			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img1.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img2.jpg" alt=""><div></div></a>
+            
+            			<div class="swiper-slide">
+				<a href="images/gallery/img11.jpg" title="Image caption 9" data-lightbox="galery"><img src="images/gallery/thm11.jpg" alt=""></a>
+				<a href="images/gallery/img12.jpg" title="Image caption 10" data-lightbox="galery"><img src="images/gallery/thm12.jpg" alt=""></a>
 			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img3.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img4.jpg" alt=""><div></div></a>
+            
+            			<div class="swiper-slide">
+				<a href="images/gallery/img13.jpg" title="Image caption 9" data-lightbox="galery"><img src="images/gallery/thm13.jpg" alt=""></a>
+				<a href="images/gallery/img14.jpg" title="Image caption 10" data-lightbox="galery"><img src="images/gallery/thm14.jpg" alt=""></a>
 			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img5.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img6.jpg" alt=""><div></div></a>
-			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img7.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img8.jpg" alt=""><div></div></a>
-			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img9.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img10.jpg" alt=""><div></div></a>
-			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img1.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img2.jpg" alt=""><div></div></a>
-			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img3.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img4.jpg" alt=""><div></div></a>
-			</div>
-
-			<div class="swiper-slide">
-				<a href=""><img src="images/gallery/img5.jpg" alt=""><div></div></a>
-				<a href=""><img src="images/gallery/img6.jpg" alt=""><div></div></a>
-			</div>
+            
 		</div>
 
 		<div class="slider-arrows slidePrev"><span class="icon icon-arrow_l"></span></div>
 		<div class="slider-arrows slideNext"><span class="icon icon-arrow_r"></span></div>
 	</div>
+
+	<div class="gallery-links">
+		<a href="https://www.facebook.com/herculestrophybaltics/photos_stream?tab=photos_albums">Facebook albumai</a>
+		<a href="https://www.youtube.com/channel/UC_e10TngwJ6LrIVMpr-o9Jw">YouTube kanalas</a>
+	</div>
 </section>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<section class="participate">
+<section class="participate" id="why_participate">
 	<h1>
-		why participate
+		Why Participate?
 		<span class="icon icon-dash"></span>
 	</h1>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="span4">
+				<div class="part-item">
+					<div class="part-item__icon">
+						<span class="icon icon-biceps"></span>
+					</div>
+					<h2>12 challenges</h2>
+					<p>12 different, exciting challenges for each team.
+					It is not the muscles but best teamwork that
+					leads to victory! To accomplish the labours
+					you will need logical thinking, physical endur-
+					ance, team spirit and some luck.
+					</p>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="part-item">
+					<div class="part-item__icon">
+						<span class="icon icon-flag"></span>
+					</div>
+					<h2>5-7 person teams</h2>
+					<p>You do not have to be a super athlete - anyone can participate! For female participants - extra points! 4 teammates participate in any of the challenges.</p>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="part-item">
+					<div class="part-item__icon">
+						<span class="icon icon-helmet"></span>
+					</div>
+					<h2>Crowd of fans</h2>
+					<p>Bring your colleagues, friends and family members. All fans can come and support their teams. Entry for adults is with a small fee (children till 18 are for free). Advance registration required.
+					</p>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="part-item">
+					<div class="part-item__icon">
+						<span class="icon icon-steak_big"></span>
+					</div>
+					<h2>Quality food</h2>
+					<p>Team packet includes light breakfast, lunch,
+					snack, delicious BBQ for dinner, water, and
+					refreshing drink during each meal. Food can be ordered for fans as well.</p>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="part-item">
+					<div class="part-item__icon">
+						<span class="icon icon-hand_shake_big"></span>
+					</div>
+					<h2>New connections</h2>
+					<p>New friends and business networks. Introduce
+						yourself and be visible, connect with new and
+						strengthen existing network. Top
+						management invited to VIP petanque tournament.</p>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="part-item">
+					<div class="part-item__icon">
+						<span class="icon icon-disco_ball_big"></span>
+					</div>
+					<h2>Exciting Afterparty</h2>
+					<p>Afterparty! Celebrate with your company in
+					the most fun afterparty. DJ will play great
+					music. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="video-participate">
+		<a href="" id="playVideo4" title="play" class="video-link">
+			<span class="icon icon-play"></span>
+		</a>
+		<span class="participate-qwe">not convinced yet?</span>
+		<span class="video-watch">watch a video!</span>
+	</div>
+
+	<div class="fixed-video">
+		<iframe id="video4" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+		<a href="" id="closeVideo4" title="close video" class="close-video"></a>
+	</div>
 </section>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<section class="contacts">
+<section class="join" id="join">
+	<h1>
+		how to join
+		<span class="icon icon-dash"></span>
+	</h1>
+
+	<div class="join-1">
+		<div class="container">
+			<div class="row">
+				<div class="span6">
+					<div class="join-wrap">
+						<div class="join-item">
+							<span class="icon icon-flag"></span>
+							<div class="join-desc">
+								<span class="join-title">Create a team of 5 - 7 members</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap">
+						<div class="join-item">
+							<span class="icon icon-biceps"></span>
+							<div class="join-desc">
+								<span class="join-title">Choose a Captain</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap">
+						<div class="join-item">
+							<span class="icon icon-lips"></span>
+							<div class="join-desc">
+								<span class="join-title">Add at least 1 female player</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="span6">
+					<div class="row">
+						<div class="span1">
+							<span class="icon icon-blob"></span>
+							<span class="join-step">1.</span>
+						</div>
+						<div class="span5">
+							<h2>find Team mates</h2>
+							<p>Find colleagues, customers, partners... to join team. Everyboady can participate!</p>
+							<p>Regardless of age, gender, weight or cultural background! No athletic skills required!</p> 
+							<p>Diversity is an asset!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="join-2">
+		<div class="container">
+			<div class="row">
+
+				<div class="span6">
+					<div class="row">
+						<div class="span1">
+							<span class="icon icon-blob"></span>
+							<span class="join-step">2.</span>
+						</div>
+						<div class="span5">
+							<h2>create team identity</h2>
+						</div>
+					</div>
+
+					<div class="join-wrap join-margin">
+						<div class="join-item">
+							<span class="icon icon-cards icon-top"></span>
+
+							<div class="join-desc">
+								<span class="join-title">Team Name & description</span>
+								<p>No The-A team is not a cool name. Be original!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap join-margin">
+						<div class="join-item">
+							<span class="icon icon-helmet icon-top"></span>
+							<div class="join-desc">
+								<span class="join-title">Outfit and flag</span>
+								<p>Symbols are very powerful to maintain combative spirits! Differentiate yourself!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="span6">
+					<div class="join-wrap join-margin">
+						<div class="join-item">
+							<span class="icon icon-bubble icon-top"></span>
+
+							<div class="join-desc">
+								<span class="join-title">Motto</span>
+								<p>Come up with a cool slogan for you team</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap join-margin">
+						<div class="join-item">
+							<span class="icon icon-notes icon-top"></span>
+							<div class="join-desc">
+								<span class="join-title">Song</span>
+								<p>Dont choose “The Eye of the Tiger”, “We are the Champions”. Go for an original song that describes your team spirit!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap join-margin">
+						<div class="join-item">
+							<span class="icon icon-camera icon-top"></span>
+							<div class="join-desc">
+								<span class="join-title">Picture</span>
+								<p>Make a cool picture of the team</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="join-3">
+		<div class="container">
+			<div class="row">
+
+				<div class="span6">
+					<div class="join-wrap">
+						<div class="join-item">
+							<span class="icon icon-eye"></span>
+
+							<div class="join-desc">
+								<span class="join-title">Check out the labours</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap">
+						<div class="join-item">
+							<span class="icon icon-stars"></span>
+							<div class="join-desc">
+								<span class="join-title">Choose your favourite labour</span>
+                                <p>Decide on joker - the labour that you plan to do well on</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap join-margin">
+						<div class="join-item">
+							<span class="icon icon-aces icon-top"></span>
+							<div class="join-desc">
+								<span class="join-title">Two aces</span>
+								<p>Invite 2 seniour executives for the CxO petanque and earn more points</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="span6">
+					<div class="row">
+						<div class="span1">
+							<span class="icon icon-blob"></span>
+							<span class="join-step">3.</span>
+						</div>
+						<div class="span5">
+							<h2>Prepare for victory</h2>
+						</div>
+					</div>
+
+					<div class="join-wrap mt-32">
+						<div class="join-item">
+							<span class="icon icon-clock"></span>
+
+							<div class="join-desc">
+								<span class="join-title">Check out the planing</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="join-wrap">
+						<div class="join-item">
+							<span class="icon icon-cloud icon-top"></span>
+							<div class="join-desc">
+								<span class="join-title">Challenge other teams online</span>
+								<p>Collect online votes and cheers from supporters for your team </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<section class="price">
+	<h1>
+		price
+		<span class="icon icon-dash"></span>
+	</h1>
+
+	<div class="charge">
+		<span class="icon icon-blob"></span>
+		<span class="cost">from 142€</span>
+	</div>
+
+	<p>
+	Plus VAT per participant
+	<br>
+	Team consists from 5-7 people
+	</p>
+</section>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<section class="register" id="register">
+	<h1>
+		register
+		<span class="icon icon-dash"></span>
+	</h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+				<div class="tab active">
+					<div class="row">
+						<div class="span1">
+							<span class="icon icon-pens"></span>
+						</div>
+						<div class="span4">
+							<div class="tab-title">team Registration</div>
+							<p>Has your company participated in Hercules Trophy before? Don't have company account? Fill the form below. You will receive confirmation of registration and login details by email within one working day.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="span7">
+				<div class="tab-content">
+					<form action="">
+						<div class="form-item">
+							<div class="form-label">First name</div>
+							<input class="form-input" type="text" placeholder="John">
+						</div>
+
+						<div class="form-item">
+							<div class="form-label">Phone number</div>
+							<input class="form-input" type="text" placeholder="+370 123 45678">
+						</div>
+
+						<div class="form-item">
+							<div class="form-label">Last name</div>
+							<input class="form-input" type="text" placeholder="Doe">
+						</div>
+
+						<div class="form-item">
+							<div class="form-label">Company name</div>
+							<input class="form-input" type="text" placeholder="Acme">
+						</div>
+
+						<div class="form-item">
+							<div class="form-label">Email</div>
+							<input class="form-input" type="email" placeholder="johnd@gmail.com">
+						</div>
+
+						<div class="form-item">
+							<div class="check-wrap">
+								<input class="form-check" type="checkbox" checked>
+								<span class="icon icon-check"></span>
+							</div>
+
+							<div class="check-text">
+								I want to recieve news  and updates to my Email
+							</div>
+						</div>
+
+						<div class="form-btn">
+							<button class="register-btn">Register</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<section class="program" id="program">
+	<h1>
+		For participants
+		<span class="icon icon-dash"></span>
+	</h1>
+	
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<div class="row program-item">
+					<div class="span1">8:00</div>
+					<div class="span3">Arrival</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">8:30</div>
+					<div class="span3">Team registration. Breakfast and logical tasks</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">9:30</div>
+					<div class="span3">Captains meeting</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">9:45</div>
+					<div class="span3">Warm up and opening ceremony</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1"><b>10:15</b></div>
+					<div class="span3"><b>1-4 Hercule contests</b> <br> (15 min. each, 15 min. - break)</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">10:15</div>
+					<div class="span3">Hercule challenges for children “Childhood Orchard Town”</div>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="row program-item">
+					<div class="span1">12:00</div>
+					<div class="span3">Lunch</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1"><b>13:15</b></div>
+					<div class="span3"><b>5 -8 Hercule contests</b> <br>(15 min. each, 15 min. - break)</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">15:00</div>
+					<div class="span3">Afternoon snack (snacks)</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">16:00</div>
+					<div class="span3">Executive VIP petanque tournament</div>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="row program-item">
+					<div class="span1"><b>16:00</b></div>
+					<div class="span3"><b>9-12 Hercule contests</b> <br> (15 min. each, 15 min. - break)</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">17:45</div>
+					<div class="span3">Snack and Recreation</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">19:00</div>
+					<div class="span3">Dinner and Awards</div>
+				</div>
+
+				<div class="row program-item">
+					<div class="span1">20.00</div>
+					<div class="span3">Party with DJ</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<section class="sponsors" id="sponsors">
+	<h1>
+		our sponsors
+		<span class="icon icon-dash"></span>
+	</h1>
+
+	<ul class="sponsors-list">
+		<li><a href=""><img src="images/sponsors/sponsor1.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/sponsors/sponsor2.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/sponsors/sponsor3.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/sponsors/sponsor4.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/sponsors/sponsor5.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/sponsors/sponsor6.jpg" alt=""></a></li>
+	</ul>
+</section>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<section class="contacts" id="contacts">
 	<div class="container">
 		<div class="row">
 			<div class="span3">
 				<div class="contacts-title">Information</div>
 				<ul>
-					<li><a href="">F.A.Q.</a></li>
-					<li><a href="">Hercules Trophy Presentation</a></li>
-					<li><a href="">Account Management</a></li>
-					<li><a href="">How to Prepare for the Event</a></li>
-					<li><a href="">Archive</a></li>
+					<li><a href="http://www.herculestrophy.lt/docs/herculestrophyvilnius_duk.pdf" target="_blank">F.A.Q.</a></li>
+					<li><a href="http://herculestrophy.lt/docs/Hercules%20Trophy%20Vilnius%202016%20presentation%20for%20participants.pdf" target="_blank">Hercules Trophy Presentation</a></li>
+					<li><a href="http://www.herculestrophy.lt/docs/herculestrophyvilnius_kaip_pasiruosti.pdf" target="_blank">How to prepare</a></li>
+                    <li><a href="http://www.herculestrophy.com/#&&PageNum=3&PageSet=Logon" target="_blank">Account management</a></li>
+					<li><a href="http://www.herculestrophy.lt/old/herculestrophyvilnius2015.htm" target="_blank">Archive</a></li>
 				</ul>
 			</div>
 			<div class="span3">
@@ -200,17 +734,60 @@
 
 				<div class="contact-item">
 					<span class="icon icon-globe"></span>
-					<span class="contact-item__text">info@emovents.lt</span>
+					<span class="contact-item__text">info@herculestrophy.lt</span>
 				</div>
 
 				<div class="contacts-title">Follow us</div>
 
 				<div class="social-links">
-					<a href=""><span class="icon icon-facebook"></span></a>
-					<a href=""><span class="icon icon-youtube"></span></a>
+					<a href="https://www.facebook.com/herculestrophybaltics"><span class="icon icon-facebook"></span></a>
+					<a href="https://www.youtube.com/channel/UC_e10TngwJ6LrIVMpr-o9Jw"><span class="icon icon-youtube"></span></a>
 				</div>
 			</div>
-			<div class="span6"></div>
+			<div class="span6">
+				<div class="contacts-tab active" id="tab1">Subscribe</div>
+				<div class="contacts-tab" id="tab2">Get involved</div>
+
+				<div class="clr"></div>
+
+				<div class="contacts-tab__content active" data-tab="tab1">
+					<form action="">
+						<div class="contacts-form__item">
+							<input class="form-input" type="text" placeholder="First Name">
+						</div>
+						<div class="contacts-form__item">
+							<input class="form-input" type="text" placeholder="Company Name">
+						</div>
+						<div class="contacts-form__item">
+							<input class="form-input" type="email" placeholder="Email">
+						</div>
+						
+						
+						<div class="form-btn">
+							<button class="contact-form__btn">Subscribe</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="contacts-tab__content" data-tab="tab2">
+					<form action="">
+						<div class="contacts-form__item">
+							<input class="form-input" type="text" placeholder="First Name">
+						</div>
+						<div class="contacts-form__item">
+							<input class="form-input" type="text" placeholder="Company Name">
+						</div>
+						<div class="contacts-form__item">
+							<input class="form-input" type="email" placeholder="Email">
+						</div>
+						
+						
+						<div class="form-btn">
+							<button class="contact-form__btn">Get involved</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -219,14 +796,14 @@
 
 <footer>
 	<img src="images/hercules-trophy.png" alt="">
-	<div class="copyright"><sub>&copy;</sub> Hercules Trophy Baltics UAB Emovents", 2016 </div>
+	<div class="copyright"><sub>&copy;</sub> Hercules Trophy Baltics / UAB Emovents", 2015 </div>
 </footer>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<script src="plugins/modernizr.custom.97074.js"></script>
 <script src="plugins/swiper.min.js"></script>
-<script src="plugins/jquery.hoverdir.js"></script>
+<script src="plugins/jquery.nav.js"></script>
+<script src="plugins/lightbox.min.js"></script>
 <script src="js/site.js"></script>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->

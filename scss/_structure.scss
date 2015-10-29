@@ -4,7 +4,11 @@ body {
 	color: $g;
 	font-family: $c;
 	background-color: #fff;
-	min-width: 320px;
+	min-width: 300px;
+}
+
+input, textarea, select, button {
+	font-family: $c;
 }
 
 a {
@@ -41,6 +45,7 @@ a {
 .container
  {
 	width: 1120px;
+	padding: 0 10px;
 	margin: 0 auto;
 	position: relative;
 }
