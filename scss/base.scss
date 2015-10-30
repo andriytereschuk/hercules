@@ -928,6 +928,10 @@ $guter: 32px;
 	transition: .1s;
 	color: $g;
 
+	&.error {
+		border: 1px solid red;
+	}
+
 	&:focus {
 		outline: none;
 		border: 1px solid $o;

@@ -133,5 +133,86 @@ $(function(){
   	$('div[data-tab="'+ id +'"]').addClass('active');
   });
 
+  // Sign btn
+  $('#signIn').on('click', function(event){
+  	event.preventDefault();
+  	window.open('http://www.herculestrophy.com/#&&PageNum=3&PageSet=Logon', '_blank');
+  });
+
+
+  // REGISTER
+  $('#reg').on('click', function(event){
+  	event.preventDefault();
+  	var name = $("#name").val();
+  	var surname = $("#surname").val();
+  	var company = $("#company").val();
+  	var email = $("#email").val();
+  	var check = $("#check").is(':checked') ? 'Yes' : 'No';
+  	var phone = $("#phone").val();
+  	var form = 1;
+
+  	if (name == '') 
+  	{
+  		$("#name").addClass("error");
+  		form = 0;
+  	}
+
+  	if (surname == '') 
+  	{
+  		$("#surname").addClass("error");
+  		form = 0;
+  	}
+
+  	if (phone == '') 
+  	{
+  		$("#phone").addClass("error");
+  		form = 0;
+  	}
+
+  	if (company == '') 
+  	{
+  		$("#company").addClass("error");
+  		form = 0;
+  	}
+
+  	if (email == '') 
+  	{
+  		$("#email").addClass("error");
+  		form = 0;
+  	}			
+
+  	var reg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i); 
+  	if (!reg.test(email))
+  	{
+  		$("#email").addClass("error");
+  		form = 0;
+  	}
+
+  	if (form == 1)
+  	{
+  		$.ajax({
+  			type: "POST",
+  			url: "mail.php",
+  			data: {
+  				name: name,
+  				surname: surname,
+  				phone: phone,
+  				company: company,
+  				email: email,
+  				check: check,
+  				form: form
+  			},
+  			success: function(data) {
+  				console.log(data);
+  				alert("Registration done");
+  			}
+  		});
+  	}		
+  });
+
+  $("input").focus(function(){
+  	$(this).removeClass("error");
+  });
+
 
 });

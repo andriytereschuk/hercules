@@ -49,7 +49,7 @@
 					</ul>
 				</div>
 
-				<a class="sign-btn" id="signIn" href="http://www.herculestrophy.com/?PageNum=1?PageSet=Logon#&amp;&amp;PageNum=3&amp;PageSet=Logon" target="_blank">Sign in</a>
+				<button class="sign-btn" id="signIn">Sign in</button>
 
 				<nav>
 					<ul>
@@ -557,32 +557,32 @@
 					<form action="">
 						<div class="form-item">
 							<div class="form-label">First name</div>
-							<input class="form-input" type="text" placeholder="John">
+							<input class="form-input" id="name" name="name" type="text" placeholder="John">
 						</div>
 
 						<div class="form-item">
 							<div class="form-label">Phone number</div>
-							<input class="form-input" type="text" placeholder="+370 123 45678">
+							<input class="form-input" id="phone" name="phone" type="text" placeholder="+370 123 45678">
 						</div>
 
 						<div class="form-item">
 							<div class="form-label">Last name</div>
-							<input class="form-input" type="text" placeholder="Doe">
+							<input class="form-input" id="surname" name="surname" type="text" placeholder="Doe">
 						</div>
 
 						<div class="form-item">
 							<div class="form-label">Company name</div>
-							<input class="form-input" type="text" placeholder="Acme">
+							<input class="form-input" id="company" name="company" type="text" placeholder="Acme">
 						</div>
 
 						<div class="form-item">
 							<div class="form-label">Email</div>
-							<input class="form-input" type="email" placeholder="johnd@gmail.com">
+							<input class="form-input" id="email" name="email" type="email" placeholder="johnd@gmail.com">
 						</div>
 
 						<div class="form-item">
 							<div class="check-wrap">
-								<input class="form-check" type="checkbox" checked>
+								<input class="form-check" id="check" name="check" type="checkbox" checked>
 								<span class="icon icon-check"></span>
 							</div>
 
@@ -592,7 +592,7 @@
 						</div>
 
 						<div class="form-btn">
-							<button class="register-btn">Register</button>
+							<button class="register-btn" id="reg">Register</button>
 						</div>
 					</form>
 				</div>
