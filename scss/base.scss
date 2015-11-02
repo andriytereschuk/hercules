@@ -1405,7 +1405,163 @@ footer {
 	  padding: 30px 0 20px 0;
 	}
 
-	.join,
+	// join
+
+	.join {
+		.container {
+			width: 738px;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		.span6 {
+			margin-left: 0;
+			width: 100%;
+		}
+
+		h2 {
+	    font-size: 24px;
+	    line-height: 32px;
+	    margin-bottom: 20px;
+		}
+
+		.span1 .icon-blob {
+	    top: 3px;
+	    left: -32px;
+	    font-size: 68px;
+		}
+
+		.span5 p {
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		.span1 {
+			width: auto;
+		}
+
+		.span1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.span5 {
+			width: auto;
+			padding-left: 44px;
+		}
+	}
+
+	.join-step {
+		font-size: 24px;
+		padding-left: 5px;
+	}
+
+	.join-1, .join-3 {
+		& > .container > .row {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.span6 {
+			order: 2;
+		}
+
+		.span6 + .span6 {
+			order: 1;
+		}
+	}
+
+	.join-1 {
+		.span6 + .span6 {
+			margin-bottom: 40px;
+		}
+	}
+
+	.join-3 {
+	    padding-top: 70px;
+	    padding-bottom: 40px;
+	}
+
+	.join-title {
+		font-size: 18px;
+	}
+
+	.join-item {
+
+		.icon-top {
+			top: 12px;
+		}
+
+		.icon {
+			width: 66px;
+			font-size: 36px;
+		}
+
+		.icon-flag {
+			font-size: 52px;
+		}
+
+		.icon-biceps {
+			font-size: 48px;
+		}
+
+		.icon-lips {
+			font-size: 28px;
+		}
+
+		.icon-bubble {
+			left: 5px;
+			font-size: 46px;
+		}
+
+		.icon-notes {
+			font-size: 40px;
+		}
+
+		.icon-camera {
+			left: 5px;
+		}
+
+		.icon-eye {
+			font-size: 46px;
+		}
+
+		.icon-stars {
+			font-size: 46px;	
+		}
+
+		.icon-aces {
+			font-size: 44px;
+		}
+
+		.icon-clock {
+			font-size: 42px;
+			left: 5px;
+		}
+
+		.icon-cloud {
+			font-size: 26px;
+		}
+	}
+
+	.join-wrap {
+		margin-bottom: 40px;
+	}
+
+	.join-margin {
+	    margin: 28px 0 0;
+	}
+
+	.join-2 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+	}
+
+
 	.price,
 	.register,
 	.program,
@@ -1565,5 +1721,31 @@ footer {
 	    text-align: center;
 	    margin-bottom: 10px;
 	}
+
+		// join
+
+		.join {
+			.container {
+				width: 100%;
+				padding: 0 10px 0 15px;
+			}
+		}
+
+		.join-desc {
+		  width: 213px;
+		}
+
+		.join-item {
+		 	position: relative;
+
+		 	.icon {
+		 		position: absolute;
+		 	}
+		}
+
+		.join-desc {
+		    width: auto;
+		    padding-left: 65px;
+		}
 }
 

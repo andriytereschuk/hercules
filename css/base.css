@@ -1814,7 +1814,95 @@ footer {
     width: 339px; }
   .video-participate {
     padding: 30px 0 20px 0; }
-  .join,
+  .join .container {
+    width: 738px; }
+  .join p {
+    font-size: 14px;
+    line-height: 24px; }
+  .join .span6 {
+    margin-left: 0;
+    width: 100%; }
+  .join h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px; }
+  .join .span1 .icon-blob {
+    top: 3px;
+    left: -32px;
+    font-size: 68px; }
+  .join .span5 p {
+    font-size: 14px;
+    line-height: 24px; }
+  .join .span1 {
+    width: auto; }
+  .join .span1 {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .join .span5 {
+    width: auto;
+    padding-left: 44px; }
+  .join-step {
+    font-size: 24px;
+    padding-left: 5px; }
+  .join-1 > .container > .row, .join-3 > .container > .row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .join-1 .span6, .join-3 .span6 {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .join-1 .span6 + .span6, .join-3 .span6 + .span6 {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .join-1 .span6 + .span6 {
+    margin-bottom: 40px; }
+  .join-3 {
+    padding-top: 70px;
+    padding-bottom: 40px; }
+  .join-title {
+    font-size: 18px; }
+  .join-item .icon-top {
+    top: 12px; }
+  .join-item .icon {
+    width: 66px;
+    font-size: 36px; }
+  .join-item .icon-flag {
+    font-size: 52px; }
+  .join-item .icon-biceps {
+    font-size: 48px; }
+  .join-item .icon-lips {
+    font-size: 28px; }
+  .join-item .icon-bubble {
+    left: 5px;
+    font-size: 46px; }
+  .join-item .icon-notes {
+    font-size: 40px; }
+  .join-item .icon-camera {
+    left: 5px; }
+  .join-item .icon-eye {
+    font-size: 46px; }
+  .join-item .icon-stars {
+    font-size: 46px; }
+  .join-item .icon-aces {
+    font-size: 44px; }
+  .join-item .icon-clock {
+    font-size: 42px;
+    left: 5px; }
+  .join-item .icon-cloud {
+    font-size: 26px; }
+  .join-wrap {
+    margin-bottom: 40px; }
+  .join-margin {
+    margin: 28px 0 0; }
+  .join-2 {
+    padding-top: 70px;
+    padding-bottom: 40px; }
   .price,
   .register,
   .program,
@@ -1904,4 +1992,16 @@ footer {
     height: 120px;
     line-height: 120px;
     text-align: center;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .join .container {
+    width: 100%;
+    padding: 0 10px 0 15px; }
+  .join-desc {
+    width: 213px; }
+  .join-item {
+    position: relative; }
+    .join-item .icon {
+      position: absolute; }
+  .join-desc {
+    width: auto;
+    padding-left: 65px; } }
