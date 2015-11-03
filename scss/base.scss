@@ -1754,7 +1754,7 @@ footer {
 		}
 	}
 
-	header .span10, .desc-bottom {
+	.desc-bottom {
 		display: none;
 	}
 
@@ -1763,14 +1763,15 @@ footer {
 			margin: 0;
 		}
 		.span2 {
-				width: 100%;
+				width: auto;
 				margin: 0;
-				text-align: center;
 			}
 	}
 
 	.logo {
 		margin-left: 0;
+		overflow: hidden;
+		width: 44px;
 	}
 
 	// participate
@@ -2137,6 +2138,11 @@ footer {
 	.copyright {
 		font-size: 14px;
 		line-height: 28px;
+	}
+
+	iframe {
+	    width: 320px;
+	    height: 180px;
 	}
    
 }

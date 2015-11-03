@@ -2008,16 +2008,17 @@ footer {
       font-size: 36px; }
     .video-desc h1 span {
       font-size: 38px; }
-  header .span10, .desc-bottom {
+  .desc-bottom {
     display: none; }
   header .row {
     margin: 0; }
   header .span2 {
-    width: 100%;
-    margin: 0;
-    text-align: center; }
+    width: auto;
+    margin: 0; }
   .logo {
-    margin-left: 0; }
+    margin-left: 0;
+    overflow: hidden;
+    width: 44px; }
   .participate .container {
     width: 100%; }
   .participate .row {
@@ -2218,4 +2219,7 @@ footer {
       width: 100%; }
   .copyright {
     font-size: 14px;
-    line-height: 28px; } }
+    line-height: 28px; }
+  iframe {
+    width: 320px;
+    height: 180px; } }
