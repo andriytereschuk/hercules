@@ -143,6 +143,7 @@ $(function(){
   // REGISTER
   $('#reg').on('click', function(event){
   	event.preventDefault();
+  	var self = $(this);
   	var name = $("#name").val();
   	var surname = $("#surname").val();
   	var company = $("#company").val();
@@ -190,6 +191,8 @@ $(function(){
 
   	if (form == 1)
   	{
+  		self.addClass('show-placeholder');
+
   		$.ajax({
   			type: "POST",
   			url: "mail.php",
@@ -203,8 +206,11 @@ $(function(){
   				form: form
   			},
   			success: function(data) {
-  				console.log(data);
-  				alert("Registration done");
+  				self.removeClass('show-placeholder');
+  				$('body').addClass('show-success');
+  				setTimeout(function(){
+  					$('body').removeClass('show-success');
+  				}, 1400);
   			}
   		});
   	}		
@@ -214,5 +220,143 @@ $(function(){
   	$(this).removeClass("error");
   });
 
+  // subscribe
+
+  $('#subscribe').on('click', function(event){
+  	event.preventDefault();
+  	var self = $(this);
+  	var name = $("#sName").val();
+  	var company = $("#sCompany").val();
+  	var email = $("#sEmail").val();
+  	var form = 1;
+
+  	if (name == '') 
+  	{
+  		$("#sName").addClass("error");
+  		form = 0;
+  	}
+
+  	if (company == '') 
+  	{
+  		$("#sCompany").addClass("error");
+  		form = 0;
+  	}
+
+  	if (email == '') 
+  	{
+  		$("#sEmail").addClass("error");
+  		form = 0;
+  	}			
+
+  	var reg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i); 
+  	if (!reg.test(email))
+  	{
+  		$("#sEmail").addClass("error");
+  		form = 0;
+  	}
+
+  	var fields = [{name: "company", value: company}];
+
+  	if (form == 1)
+  	{
+  		self.addClass('show-placeholder');
+
+  		$.ajax({
+  			type: "POST",
+  			url: "https://app.mailerlite.com/api/v1/subscribers/1916381/",
+  			headers: {
+		      'Content-Type':'application/x-www-form-urlencoded'
+		    },
+  			data: {
+  				apiKey: '3a60451343a72c6d4c997c294d1b00a4',
+  				id: '1916381',
+  				email: email,
+  				name: name,
+  				fields: fields
+  			},
+  			success: function(data) {
+  				console.log('data', data);
+  				self.removeClass('show-placeholder');
+  				$('body').addClass('show-success');
+  				setTimeout(function(){
+  					$('body').removeClass('show-success');
+  				}, 1400);
+  			}
+  		});
+  	}		
+  });
+
+
+  // get involved
+
+  $('#involved').on('click', function(event){
+  	event.preventDefault();
+  	var self = $(this);
+  	var name = $("#iName").val();
+  	var email = $("#iEmail").val();
+  	var city = $("#city").val();
+  	var notes = $("#interest").val();
+  	var form = 1;
+
+  	if (name == '') 
+  	{
+  		$("#iName").addClass("error");
+  		form = 0;
+  	}
+
+  	if (city == '') 
+  	{
+  		$("#city").addClass("error");
+  		form = 0;
+  	}
+
+  	if (notes == '') 
+  	{
+  		$("#interest").addClass("error");
+  		form = 0;
+  	}
+
+  	if (email == '') 
+  	{
+  		$("#sEmail").addClass("error");
+  		form = 0;
+  	}			
+
+  	var reg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i); 
+  	if (!reg.test(email))
+  	{
+  		$("#iEmail").addClass("error");
+  		form = 0;
+  	}
+
+  	var fields = [{name: "city", value: city}, {name: "notes", value: notes}];
+
+  	if (form == 1)
+  	{
+  		self.addClass('show-placeholder');
+
+  		$.ajax({
+  			type: "POST",
+  			url: "https://app.mailerlite.com/api/v1/subscribers/2742259/",
+  			headers: {
+		      'Content-Type':'application/x-www-form-urlencoded'
+		    },
+  			data: {
+  				apiKey: '3a60451343a72c6d4c997c294d1b00a4',
+  				id: '2742259',
+  				email: email,
+  				name: name,
+  				fields: fields
+  			},
+  			success: function(data) {
+  				self.removeClass('show-placeholder');
+  				$('body').addClass('show-success');
+  				setTimeout(function(){
+  					$('body').removeClass('show-success');
+  				}, 1400);
+  			}
+  		});
+  	}		
+  });
 
 });

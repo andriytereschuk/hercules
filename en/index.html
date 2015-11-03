@@ -13,7 +13,7 @@
 	<title>Hercules Trophy Baltics (Vilnius)</title>
 
 	<!-- FAVICON -->
-	<link rel="shortcut icon" href="/../images/favicon.ico" />
+	<link rel="shortcut icon" href="../images/favicon.ico" />
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,7 +45,7 @@
 				<div class="lang">
 					<div class="curent-lang">En</div>
 					<ul class="langs">
-						<li><a href="index_lt.html">Lt</a></li>
+						<li><a href="../">Lt</a></li>
 					</ul>
 				</div>
 
@@ -592,7 +592,10 @@
 						</div>
 
 						<div class="form-btn">
-							<button class="register-btn" id="reg">Register</button>
+							<button class="register-btn" id="reg">
+								<span class="btn-txt">Register</span>
+								<span class='preloader'><span></span></span>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -753,18 +756,21 @@
 				<div class="contacts-tab__content active" data-tab="tab1">
 					<form action="">
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="First Name">
+							<input class="form-input" id="sName" name="sName" type="text" placeholder="First Name">
 						</div>
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="Company Name">
+							<input class="form-input" id="sCompany" name="sCompany" type="text" placeholder="Company Name">
 						</div>
 						<div class="contacts-form__item">
-							<input class="form-input" type="email" placeholder="Email">
+							<input class="form-input" id="sEmail" name="sEmail" type="email" placeholder="Email">
 						</div>
 						
 						
 						<div class="form-btn">
-							<button class="contact-form__btn">Subscribe</button>
+							<button class="contact-form__btn" id="subscribe">
+								<span class="btn-txt">Subscribe</span>
+								<span class='preloader'><span></span></span>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -772,18 +778,27 @@
 				<div class="contacts-tab__content" data-tab="tab2">
 					<form action="">
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="First Name">
+							<input class="form-input" type="text" id="iName" name="iName" placeholder="First Name">
 						</div>
+						
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="Company Name">
+							<input class="form-input" type="email" id="iEmail" name="iEmail" placeholder="Email">
 						</div>
+
 						<div class="contacts-form__item">
-							<input class="form-input" type="email" placeholder="Email">
+							<input class="form-input" type="text" id="city" name="city" placeholder="City">
+						</div>
+
+						<div class="contacts-form__item">
+							<input class="form-input" type="text" id="interest" name="interest" placeholder="Interest">
 						</div>
 						
 						
 						<div class="form-btn">
-							<button class="contact-form__btn">Get involved</button>
+							<button class="contact-form__btn" id="involved">
+								<span class="btn-txt">Get involved</span>
+								<span class='preloader'><span></span></span>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -799,12 +814,39 @@
 	<div class="copyright"><sub>&copy;</sub> Hercules Trophy Baltics / UAB Emovents", 2015 </div>
 </footer>
 
+<div class="success"><div>Operation successfull</div></div>
+
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
 <script src="../plugins/swiper.min.js"></script>
 <script src="../plugins/jquery.nav.js"></script>
 <script src="../plugins/lightbox.min.js"></script>
 <script src="../js/site.js"></script>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<!-- Google analitics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67246964-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6991118-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 

@@ -45,11 +45,11 @@
 				<div class="lang">
 					<div class="curent-lang">Lt</div>
 					<ul class="langs">
-						<li><a href="index.html">En</a></li>
+						<li><a href="http://herculestrophy.lt/en">En</a></li>
 					</ul>
 				</div>
 
-				<button class="sign-btn" id="signIn">Sign in</button>
+				<button class="sign-btn" id="signIn">Prisijunk</button>
 
 				<nav>
 					<ul>
@@ -567,7 +567,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 						<div class="form-item">
 							<div class="form-label">El. paštas</div>
-							<input class="form-input" type="email" id="email" name="email" type="email" placeholder="jonas.jonaitis@imone.lt">
+							<input class="form-input" type="email" id="email" name="email" placeholder="jonas.jonaitis@imone.lt">
 						</div>
 
 						<div class="form-item">
@@ -582,7 +582,10 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 						</div>
 
 						<div class="form-btn">
-							<button id="reg" class="register-btn">Registruotis</button>
+							<button id="reg" class="register-btn">
+								<span class="btn-txt">Registruotis</span>
+								<span class='preloader'><span></span></span>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -743,18 +746,23 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 				<div class="contacts-tab__content active" data-tab="tab1">
 					<form action="">
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="First Name">
+							<input class="form-input" type="text" id="sName" name="sName" placeholder="First Name">
 						</div>
+
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="Company Name">
+							<input class="form-input" type="text" id="sCompany" name="sCompany" placeholder="Company Name">
 						</div>
+
 						<div class="contacts-form__item">
-							<input class="form-input" type="email" placeholder="Email">
+							<input class="form-input" type="email" id="sEmail" name="sEmail" placeholder="Email">
 						</div>
 						
 						
 						<div class="form-btn">
-							<button class="contact-form__btn">Registruokis</button>
+							<button class="contact-form__btn" id="subscribe">
+								<span class="btn-txt">Registruotis</span>
+								<span class='preloader'><span></span></span>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -762,18 +770,27 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 				<div class="contacts-tab__content" data-tab="tab2">
 					<form action="">
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="First Name">
+							<input class="form-input" type="text" id="iName" name="iName" placeholder="First Name">
 						</div>
+						
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" placeholder="Company Name">
+							<input class="form-input" type="email" id="iEmail" name="iEmail" placeholder="Email">
 						</div>
+
 						<div class="contacts-form__item">
-							<input class="form-input" type="email" placeholder="Email">
+							<input class="form-input" type="text" id="city" name="city" placeholder="City">
+						</div>
+
+						<div class="contacts-form__item">
+							<input class="form-input" id="interest" name="interest" type="text" placeholder="Interest">
 						</div>
 						
 						
 						<div class="form-btn">
-							<button class="contact-form__btn">Prisijunk</button>
+							<button class="contact-form__btn" id="involved">
+								<span class="btn-txt">Prisijunk</span>
+								<span class='preloader'><span></span></span>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -799,6 +816,31 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 <script src="plugins/jquery.nav.js"></script>
 <script src="plugins/lightbox.min.js"></script>
 <script src="js/site.js"></script>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<!-- Google analitics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67246964-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6991118-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
