@@ -138,6 +138,82 @@ nav {
 	}
 }
 
+.menu-close {
+	display: none;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 5px;
+	top: 13px;
+
+	&:before {
+		position: absolute;
+		display: block;
+		content: '';
+		width: 20px;
+		height: 2px;
+		background-color: $o;
+		transform: rotate(45deg);
+		top: 15px;
+		left: 6px;
+	}
+
+	&:after {
+		position: absolute;
+		display: block;
+		content: '';
+		width: 20px;
+		height: 2px;
+		background-color: $o;
+		transform: rotate(-45deg);
+		top: 15px;
+		left: 6px;
+	}
+}
+
+.menu-open {
+	display: none;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 6px;
+	top: 13px;
+	text-align: center;
+
+	span {
+		display: block;
+		width: 20px;
+		height: 2px;
+		background-color: $o;
+		margin-left: 6px;
+		margin-top: 15px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			display: block;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: $o;
+			top: -5px;
+			left: 0;
+		}
+
+		&:after {
+			position: absolute;
+			display: block;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: $o;
+			top: 5px;
+			left: 0;
+		}
+	}
+}
+
+
 // top
 
 .top {
@@ -384,6 +460,7 @@ iframe {
 
 	p {
 		font-size: 18px;
+		text-align: center;
 	}
 }
 
@@ -483,7 +560,15 @@ $guter: 32px;
 		display: block;
 		font-size: 70px;
 		color: #fff;
-		text-shadow: 0 0 6px rgba(0, 0, 0, 0.6)
+		opacity: 0.5;
+		transition: 0.15s;
+		text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+	}
+
+	&:hover {
+		.icon {
+			opacity: 1;
+		}
 	}
 }
 
@@ -1011,6 +1096,15 @@ $guter: 32px;
 
 .program {
 	padding-bottom: 60px;
+
+	h2 {
+		color: $b;
+		font-size: 40px;
+		font-family: $h2;
+		line-height: 1;
+		padding: 0 0 48px 0;
+		text-align: center;
+	}
 }
 
 .program-item {
@@ -1028,28 +1122,132 @@ $guter: 32px;
 
 .sponsors {
 	background-color: $e;
-	padding-bottom: 65px;
+	padding-bottom: 96px;
+
+	h2 {
+		color: $b;
+		font-size: 40px;
+		font-family: $h2;
+		line-height: 1;
+		padding: 48px 0;
+		text-align: center;
+	}
 }
 
-.sponsors-list {
-	text-align: center;
+.sp-slider {
+	.swiper-slide {
+		width: 160px;
+		margin: 0 16px;
+	}
 
-	li {
-		display: inline-block;
-		margin: 0 0.6% 32px 0.6%;
-		width: 14%;
+	a {
+		display: block;
 
-		a {
-			display: block;
-			text-align: center;
-
+		&:hover {
 			img {
-				vertical-align: top;
-				max-width: 100%;
+				filter: grayscale(0);
+				filter: none;
+				opacity: 1;
 			}
 		}
 	}
+
+	img {
+		vertical-align: top;
+		transition: all .3s ease;
+		filter: grayscale(1);
+		opacity: 0.6;
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	}
 }
+
+// labours
+
+.labours {
+	background-color: $e;
+	padding-bottom: 96px;
+
+	h2 {
+		color: $b;
+		font-size: 40px;
+		font-family: $h2;
+		line-height: 1;
+		padding: 48px 0;
+		text-align: center;
+	}
+}
+
+.lb-slider {
+	.swiper-slide {
+		width: 544px;
+		margin: 0 16px;
+	}
+
+	p {
+		letter-spacing: 0.01em;
+	}
+}
+
+.lb-title {
+	position: relative;
+	min-height: 106px;
+
+	.icon {
+		position: absolute;
+		color: $o;
+		font-size: 92px;
+		line-height: 1;
+	}
+}
+
+.lb-step {
+	position: absolute;
+	color: #fff;
+	z-index: 2;
+	font-family: $h2;
+	font-size: 24px;
+	font-weight: bold;
+	top: 26px;
+	left: 52px;
+}
+
+.lb-caption {
+	font-size: 24px;
+	color: $b;
+	font-family: $h2;
+	padding-left: 90px;
+	padding-top: 26px;
+	position: relative;
+	z-index: 2;
+}
+
+.lb-row {
+	&:before,
+	&:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	&:after {
+	 	clear: both;
+	}
+}
+
+.lb-block {
+	width: 256px;
+	float: left;
+}
+
+.lb-block + .lb-block {
+	margin-left: 32px;
+}
+
+.lb-row + .lb-row {
+	margin-top: 22px;
+}
+
+
 
 // contacts
 
@@ -1069,6 +1267,8 @@ $guter: 32px;
 		a {
 			color: $l;
 			transition: .1s;
+			display: block;
+			line-height: 24px;
 
 			&:hover {
 				color: $o;
@@ -1086,6 +1286,7 @@ $guter: 32px;
 }
 
 .contact-item {
+	display: block;
 	margin: 20px 0 30px;
 
 	&:before,
@@ -1118,6 +1319,12 @@ $guter: 32px;
 
 .contact-item + .contact-item {
 	margin-bottom: 16px;
+}
+
+a.contact-item {
+	&:hover {
+		color: $o;
+	}
 }
 
 .icon-phone {
@@ -1209,7 +1416,13 @@ $guter: 32px;
 .contacts-tab__content {
 	display: none;
 	background-color: $e;
-	padding: 32px 0;
+	padding: 28px 0 32px;
+
+	p {
+		padding: 0 32px;
+		line-height: 24px;
+		margin-bottom: 26px;
+	}
 
 	&.active {
 		display: block;
@@ -1219,36 +1432,30 @@ $guter: 32px;
 // footer
 
 footer {
-	text-align: center;
-	background-color: $e;
+	padding-top: 42px;
+}
 
-	img {
-		margin: 46px 0 32px;
-		vertical-align: middle;
-	}
+.footer-title {
+	font-size: 24px;
+	font-family: $h2;
+	margin-bottom: 38px;
 }
 
 .copyright {
 	text-align: center;
+	font-size: 16px;
 	padding-bottom: 35px;
+	padding-top: 20px;
 
 	sub {
-		font-size: 24px;
+		font-size: 20px;
+		position: relative;
+		top: 8px;
 	}
 }
 
 .wrapper {
 	padding-top: 96px;
-}
-
-.sponsors-list {
-	text-align: center;
-
-	li {
-		display: inline-block;
-		margin: 0 0.6% 32px 0.6%;
-		width: 14%;
-	}
 }
 
 
@@ -1457,34 +1664,215 @@ footer {
 	top: 2px;
 }
 
+
+.testimonials {
+	background-color: $o;
+	padding-bottom: 50px;
+}
+
+.offset1 {
+	margin-left: 128px;
+}
+
+.quote {
+	text-align: center;
+	position: relative;
+	margin-top: 45px;
+	overflow: hidden;
+
+	.icon {
+		color: #fff;
+		font-size: 110px;
+		line-height: 1;
+	}
+}
+
+.quote-sign {
+	font-family: $h1;
+	color: $o;
+	font-size: 112px;
+	position: absolute;
+	left: -26px;
+	top: 55px;
+	right: 0;
+	text-align: center;
+}
+
+.ts-slider {
+
+	.swiper-slide {
+		color: #fff;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+
+		p {
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+	}
+}
+
+.ts-blok {
+
+}
+
+.ts-author {
+	font-size: 24px;
+	font-family: $h2;
+	margin-bottom: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // md responsive
 
 @media (max-width: 1159px) {
 	.container {
-	    width: 100%;
-	    padding: 0 20px;
-	    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 	}
 
-	nav {
-		display: none;
+
+	section {
+		overflow: hidden;
+	}
+
+	.menu-close, .menu-open {
+		display: block;
 	}
 
 	header {
-		position: relative;
+		height: 56px;
 
 		[class*="span"] {
 			margin-left: 0;
 		}
 
+		.span2 {
+			width: 100%;
+			text-align: center;
+		}
+
 		.span10 {
-			float: right;
-			width: auto;
+			float: none;
+			width: 170px;
+			background-color: $e;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0 0 0 56px;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			height: 0;
+			z-index: 2;
+
+			&.span10-open {
+				height: auto;	
+			}
+		}
+	}
+
+	.sign-btn {
+		float: none;
+		order: 2;
+		margin-top: 16px;
+		margin-left: 0;
+		margin-bottom: 32px;
+	}
+
+	nav {
+		float: none;
+		order: 1;
+		padding-top: 8px;
+
+		li {
+			display: block;
+			line-height: 40px;
+
+			a {
+				font-size: 14px;
+			}
+		}
+
+		li + li {
+			padding-left: 0;
+		}
+	}
+
+	.logo {
+	    margin-top: 7px;
+	    margin-left: 0;
+	    display: inline-block;
+
+	    img {
+	    	width: 148px;
+	    }
+	}
+
+	.lang {
+		float: none;
+		position: fixed;
+		right: 10px;
+		top: 0;
+		margin-top: 13px;
+		margin-left: 0;
+	}
+
+	.langs {
+		left: -24px;
+	}
+
+	.curent-lang {
+		padding-right: 0;
+		color: $o;
+
+		&:after {
+			display: none;
 		}
 	}
 
 	.top {
-	    padding-top: 0;
+	    padding-top: 56px;
 	}
 
 	.top-slider {
@@ -1854,16 +2242,16 @@ footer {
 		}
 	}
 
+	// labours
+	.labours {
+		.row {
+			margin-left: 32px;
+		}
+	}
+
 	// sponsors
 
-	.sponsors {
-	  padding-bottom: 50px;
-	} 
 
-	.sponsors-list li {
-    margin: 0 1.5% 28px 1.5%;
-    width: 24%;
-	}
 
 	// contacts
 
@@ -2232,14 +2620,7 @@ footer {
 
 	// sponsors
 
-	.sponsors {
-	  padding-bottom: 40px;
-	} 
 
-	.sponsors-list li {
-    margin: 0 1% 9px 1%;
-    width: 45%;
-	}
 
 	// contacts
 
@@ -2325,25 +2706,6 @@ footer {
 		.form-btn {
 			padding: 0 20px;
 		}
-	}
-
-	// footer
-	
-
-	footer {
-		padding: 0 5px;
-
-		.sponsors-list {
-		  li {
-		  	margin: 0 0 20px 0;
-		  	width: 100%;
-		  }
-		}	
-	}
-
-	.copyright {
-		font-size: 14px;
-		line-height: 28px;
 	}
 
 	iframe {

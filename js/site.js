@@ -1,22 +1,34 @@
 $(function(){
+
+  // responsive menu 
+
+  $('#menuOpen').on('click', function(){
+    $('#menu').addClass('span10-open');
+  });
+
+  $('#menuClose').on('click', function(){
+    $('#menu').removeClass('span10-open');
+  });
+
 	// top slider
 
 	var swiper1 = new Swiper('#topSlider', {
 	    loop: true,
 	    autoplay: false,
-	    //autoplay: 4000,
-	    speed: 600
+	    autoplay: 4000,
+	    speed: 700
 	});
 
 	// Gallery slider
 
 	var $slider = $('.gallery-slider');
-	var $slidePrev = $('.slidePrev');
-	var $slideNext = $('.slideNext');
+	var $slidePrev = $('#glArrowLeft');
+	var $slideNext = $('#glArrowRight');
 
 	var swiper2 = new Swiper('#gallerySlider', {
 	    slidesPerView: 'auto',
 	    centeredSlides: true,
+      speed: 400,
 	    loop: true
 	});
 
@@ -210,7 +222,7 @@ $(function(){
   				$('body').addClass('show-success');
   				setTimeout(function(){
   					$('body').removeClass('show-success');
-  				}, 1400);
+  				}, 2000);
   			}
   		});
   	}		
@@ -280,7 +292,7 @@ $(function(){
   				$('body').addClass('show-success');
   				setTimeout(function(){
   					$('body').removeClass('show-success');
-  				}, 1400);
+  				}, 2000);
   			}
   		});
   	}		
@@ -353,10 +365,55 @@ $(function(){
   				$('body').addClass('show-success');
   				setTimeout(function(){
   					$('body').removeClass('show-success');
-  				}, 1400);
+  				}, 2000);
   			}
   		});
   	}		
   });
 
+  // testimonials slider
+  var swiper3 = new Swiper('#tsSlider', {
+      loop: true,
+      autoplay: 4000,
+      speed: 600,
+      grabCursor: true
+  });
+
+  $('#tsSlider').hover(
+    function(){
+      swiper3.stopAutoplay();
+    },
+    function(){
+      swiper3.startAutoplay();
+    }
+  );
+
+  // sponsor slider
+  var swiper4 = new Swiper('#spSlider', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
+      speed: 1000,
+      autoplay: 3000
+  });
+
+  // sponsor slider
+  var swiper5 = new Swiper('#lbSlider', {
+      slidesPerView: 'auto',
+      loop: true,
+      speed: 800,
+      grabCursor: true
+  });
+
+  var $lbSlidePrev = $('#lbArrowLeft');
+  var $lbSlideNext = $('#lbArrowRight');
+
+
+  $lbSlidePrev.on('click', function(){
+    swiper5.slidePrev();
+  });
+
+  $lbSlideNext.on('click', function(){
+    swiper5.slideNext();
+  });
 });

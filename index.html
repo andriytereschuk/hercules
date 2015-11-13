@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +42,7 @@
 				</a>
 			</div>
 
-			<div class="span10">
+			<div class="span10" id="menu">
 				<div class="lang">
 					<div class="curent-lang">Lt</div>
 					<ul class="langs">
@@ -62,9 +63,13 @@
 						<li><a href="#contacts">Kontaktai</a></li>
 					</ul>
 				</nav>
+
+				<div id="menuClose" class="menu-close"></div>
 			</div>
 		</div>
 	</div>
+
+	<div id="menuOpen" class="menu-open"><span></span></div>
 </header>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
@@ -88,8 +93,8 @@
 		<div class="desc-container">
 			<div class="slogan">
 				<span class="icon icon-blob"></span>
-				<div class="slogan-text1"><span>Atvykite kaip</span><br><span>įmonė</span></div>
-				<div class="slogan-text2">Išvykite kaip <br> <b>komanda</b></div>
+				<div class="slogan-text1"><span>ATVYKITE</span><br><span>KAIP ĮMONĖ</span></div>
+				<div class="slogan-text2">išvykite kaip <br> <b>komanda</b></div>
 			</div>
 
 			<div class="video-desc">
@@ -128,7 +133,7 @@
 		<div class="row">
 			<div class="span12">
 				<h1>
-					Apie Hercules Trophy
+					apie hercules trophy
 					<span class="icon icon-dash"></span>
 				</h1>
                 <p>
@@ -148,7 +153,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <section class="gallery" id="gallery">
 	<h1>
-		Galerija
+		galerija
 		<span class="icon icon-dash"></span>
 	</h1>
 
@@ -192,8 +197,8 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
             
 		</div>
 
-		<div class="slider-arrows slidePrev"><span class="icon icon-arrow_l"></span></div>
-		<div class="slider-arrows slideNext"><span class="icon icon-arrow_r"></span></div>
+		<div class="slider-arrows slidePrev" id="glArrowLeft"><span class="icon icon-arrow_l"></span></div>
+		<div class="slider-arrows slideNext" id="glArrowRight"><span class="icon icon-arrow_r"></span></div>
 	</div>
 
 	<div class="gallery-links">
@@ -206,7 +211,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <section class="participate" id="why_participate">
 	<h1>
-		Kodėl verta dalyvauti?
+		kodėl verta dalyvauti?
 		<span class="icon icon-dash"></span>
 	</h1>
 
@@ -219,7 +224,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 						<span class="icon icon-biceps"></span>
 					</div>
 					<h2>12 iššūkių</h2>
-					<p>12 skirtingų, netradicinių ir azartiškų rungčių kiekvienai komandai. Laimi ne raumeningiausia, o darniausia komanda! Rungtims įveikti reikės loginio mąstymo, fizinės ištvermės, komandos susiklausymo ir sėkmės
+					<p>12 skirtingų, netradicinių ir azartiškų rungčių kiekvienai komandai. Laimi ne raumeningiausia, o darniausia komanda! Rungtims įveikti reikės loginio mąstymo, fizinės ištvermės, komandos susiklausymo ir sėkmės.
 					</p>
 				</div>
 			</div>
@@ -293,9 +298,45 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
+<section class="testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="span10 offset1">
+
+				<div class="quote">
+					<span class="icon icon-blob"></span>
+					<span class="quote-sign">“</span>
+				</div>
+
+				<div id="tsSlider" class="ts-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide st-slide">
+							<p>Since we grew out of the age when one wishes to win at any cost, we have managed to spent time very well in Hercules Trophy. We have overcome our personal and team obstacles. We gave 100% of our effort even if we saw that we have no chance against those young athletic men. We are proud of our team. Participation in such event consolidates the team even more.</p>
+
+							<div class="ts-author">Inga Navickaitė</div>
+							<div class="ts-company">ECE Projektmanagement</div>
+						</div>
+
+						<div class="swiper-slide st-slide">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ab deleniti aut enim a nesciunt rerum nisi fugiat eaque quis quia, tempora libero et voluptatem saepe harum, reiciendis vel, obcaecati laborum, dolore iure vero error asperiores. Ipsa ipsam sunt explicabo vitae vero libero cumque amet est, repellat, id rem dolorem!</p>
+
+							<div class="ts-author">Andrii Tereshchuk</div>
+							<div class="ts-company">ELEKS</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
 <section class="join" id="join">
 	<h1>
-		Kaip dalyvauti?
+		kaip dalyvauti?
 		<span class="icon icon-dash"></span>
 	</h1>
 
@@ -370,7 +411,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 							<div class="join-desc">
 								<span class="join-title">Komandos pavadinimas ir aprašymas</span>
-								<p>Ne, "Komanda #1" tikrai nėra šaunus pavadinimas. Pasistenkite būti originalūs!</p>
+								<p>Ne „Komanda #1“ tikrai nėra šaunus pavadinimas. Pasistenkite būti originalūs!</p>
 							</div>
 						</div>
 					</div>
@@ -380,7 +421,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 							<span class="icon icon-helmet icon-top"></span>
 							<div class="join-desc">
 								<span class="join-title">Apranga ir vėliava</span>
-								<p>Simboliai yra labai svarbūs palaikyti kovinei dvasiai! Išsiskirkite nuo kitų!</p>
+								<p>Jums svarbūs simboliai padės palaikyti kovinę dvasią! Išsiskirkite iš kitų!</p>
 							</div>
 						</div>
 					</div>
@@ -403,7 +444,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 							<span class="icon icon-notes icon-top"></span>
 							<div class="join-desc">
 								<span class="join-title">Daina</span>
-								<p>Neapsiribokite “The Eye of the Tiger” ar “We are the Champions”. Išsirinkite originalią dainą, kuri atspindi jūsų komandos dvasią!</p>
+								<p>Neapsiribokite „The Eye of the Tiger“ ar „We are the Champions”. Išsirinkite originalią dainą, kuri atspindi jūsų komandos dvasią!</p>
 							</div>
 						</div>
 					</div>
@@ -413,7 +454,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 							<span class="icon icon-camera icon-top"></span>
 							<div class="join-desc">
 								<span class="join-title">Nuotrauka</span>
-								<p>Kartu su komanda įsiamžinkite šaunuoje nuotraukoje.</p>
+								<p>Kartu su komanda įsiamžinkite šaunioje nuotraukoje.</p>
 							</div>
 						</div>
 					</div>
@@ -444,7 +485,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 							<span class="icon icon-stars"></span>
 							<div class="join-desc">
 								<span class="join-title">Išsirinkite mėgstamiausią rungtį</span>
-                                <p>Pasirink džokerį - kurioje rungtyje planuojate laimėti.</p>
+                                <p>Pasirinkite džokerį – rungtį, kurioje planuojate laimėti.</p>
 							</div>
 						</div>
 					</div>
@@ -468,7 +509,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 							<span class="join-step">3.</span>
 						</div>
 						<div class="span5">
-							<h2>Pasiruošk pergalei</h2>
+							<h2>Pasiruoškite pergalei</h2>
 						</div>
 					</div>
 
@@ -502,7 +543,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <section class="price">
 	<h1>
-		Kaina
+		kaina
 		<span class="icon icon-dash"></span>
 	</h1>
 
@@ -522,7 +563,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <section class="register" id="register">
 	<h1>
-		Registruokitės
+		registruokitės
 		<span class="icon icon-dash"></span>
 	</h1>
 
@@ -536,7 +577,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 						</div>
 						<div class="span4">
 							<div class="tab-title">Komandos registracija</div>
-							<p>Jūsų įmonė dar nėra dalyvavusi varžybose? Neturite įmonės paskyros? Užpildykite informaciją žemiau. Registracijos patvirtinimą ir prisijungimo duomenis prie įmonės paskyros gausite el. paštu per vieną darbo dieną.</p>
+							<p>Jūsų įmonė dar nėra dalyvavusi varžybose? Neturite įmonės paskyros? Užpildykite informaciją žemiau. Registracijos patvirtinimą ir prisijungimo duomenis prie įmonės paskyros gausite el. paštu per vieną darbo dieną.</p><br><p>Jeigu jau turite prieigą, spauskite „Prisijunk“ mygtuką meniu juostoje.</p>
 						</div>
 					</div>
 				</div>
@@ -584,7 +625,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 						<div class="form-btn">
 							<button id="reg" class="register-btn">
 								<span class="btn-txt">Registruotis</span>
-								<span class='preloader'><span></span></span>
+								<span class="preloader"><span></span></span>
 							</button>
 						</div>
 					</form>
@@ -598,9 +639,11 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <section class="program" id="program">
 	<h1>
-		Dalyviams
+		dalyviams
 		<span class="icon icon-dash"></span>
 	</h1>
+
+	<h2>program</h2>
 	
 	<div class="container">
 		<div class="row">
@@ -625,26 +668,28 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 					<div class="span3">Apšilimas ir atidarymo ceremonija.</div>
 				</div>
 
-				<div class="row program-item">
+			</div>
+
+			<div class="span4">
+				
+                <div class="row program-item">
 					<div class="span1"><b>10:15</b></div>
-					<div class="span3"><b>1-4 Hercules Trophy rungtys</b> <br> (rungtis ir pertrauka kas 15 min.)</div>
+					<div class="span3"><b>1-4 Heraklio rungtys</b> <br> (rungtis ir pertrauka kas 15 min.)</div>
 				</div>
 
 				<div class="row program-item">
 					<div class="span1">10:15</div>
-					<div class="span3">Atsidaro “Vaikystės sodas” Hercules Trophy kaimelyje</div>
+					<div class="span3">Atsidaro „Vaikystės sodas“ Hercules Trophy kaimelyje</div>
 				</div>
-			</div>
-
-			<div class="span4">
-				<div class="row program-item">
+                
+                <div class="row program-item">
 					<div class="span1">12:00</div>
 					<div class="span3">Pietūs</div>
 				</div>
 
 				<div class="row program-item">
 					<div class="span1"><b>13:15</b></div>
-					<div class="span3"><b>5 -8 Hercules rungtys</b> <br>(rungtis ir pertrauka kas 15 min.)</div>
+					<div class="span3"><b>5 -8 Heraklio rungtys</b> <br>(rungtis ir pertrauka kas 15 min.)</div>
 				</div>
 
 				<div class="row program-item">
@@ -652,21 +697,24 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 					<div class="span3">Popietinė užkanda</div>
 				</div>
 
+			</div>
+
+			<div class="span4">
+
 				<div class="row program-item">
 					<div class="span1">16:00</div>
 					<div class="span3">Vadovų petankės turnyras</div>
 				</div>
-			</div>
 
-			<div class="span4">
 				<div class="row program-item">
+
 					<div class="span1"><b>16:00</b></div>
-					<div class="span3"><b>9-12 Hercules rungtys</b> <br>(rungtis ir pertrauka kas 15 min.)</div>
+					<div class="span3"><b>9-12 Heraklio rungtys</b> <br>(rungtis ir pertrauka kas 15 min.)</div>
 				</div>
 
 				<div class="row program-item">
 					<div class="span1">17:45</div>
-					<div class="span3">Poilsio ir bendravimo laikas.</div>
+					<div class="span3">Poilsio ir bendravimo laikas</div>
 				</div>
 
 				<div class="row program-item">
@@ -686,20 +734,119 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
-<section class="sponsors" id="sponsors">
-	<h1>
-		Mūsų rėmėjai
-		<span class="icon icon-dash"></span>
-	</h1>
+<section class="labours" id="labours">
+	<h2>labours</h2>
 
-	<ul class="sponsors-list">
-		<li><a href=""><img src="images/sponsors/sponsor1.jpg" alt=""></a></li>
-		<li><a href=""><img src="images/sponsors/sponsor2.jpg" alt=""></a></li>
-		<li><a href=""><img src="images/sponsors/sponsor3.jpg" alt=""></a></li>
-		<li><a href=""><img src="images/sponsors/sponsor4.jpg" alt=""></a></li>
-		<li><a href=""><img src="images/sponsors/sponsor5.jpg" alt=""></a></li>
-		<li><a href=""><img src="images/sponsors/sponsor6.jpg" alt=""></a></li>
-	</ul>
+	<div id="lbSlider" class="lb-slider swiper-container">
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide">
+				<div class="lb-row">
+					<div class="lb-block">
+						<img src="images/labours/img1.jpg" alt="">
+					</div>
+					<div class="lb-block">
+						<div class="lb-title">
+								<span class="icon icon-blob"></span>
+								<span class="lb-step">1.</span>
+								<div class="lb-caption">Nissan jump on   pagalvės </div>
+						</div>
+
+						<p>Jump from a height of six meters on a huge inflatable pillow. Dare? This event for those who believe that it can fly.</p>
+					</div>
+				</div>
+
+				<div class="lb-row">
+					<img src="images/labours/img3.jpg" alt="">
+				</div>
+			</div>
+
+			<!-- |||||||||||||| -->
+
+			<div class="swiper-slide">
+				<div class="lb-row">
+					<div class="lb-block">
+						<img src="images/labours/img2.jpg" alt="">
+					</div>
+					<div class="lb-block">
+						<div class="lb-title">
+								<span class="icon icon-blob"></span>
+								<span class="lb-step">3.</span>
+								<div class="lb-caption">Bubbles football</div>
+						</div>
+
+						<p>It is easy to play football? And if you tried to do it got into a big inflatable ball? This event usually happens and one of as fun.</p>
+					</div>
+				</div>
+
+				<div class="lb-row">
+					<div class="lb-title">
+							<span class="icon icon-blob"></span>
+							<span class="lb-step">2.</span>
+							<div class="lb-caption">Volleyball Square</div>
+					</div>
+
+					<p>This game your team is not news? What if at the same time will have to fight even with three teams? The network will be divided in a way that can never accurately predict which side the ball will arrive. Do not expect the usual volleyball net!</p>
+				</div>
+			</div>
+
+			<!-- |||||||||||||| -->
+
+			<div class="swiper-slide">
+				<div class="lb-row">
+					<div class="lb-block">
+						<img src="images/labours/img6.jpg" alt="">
+					</div>
+					<div class="lb-block">
+						<div class="lb-title">
+								<span class="icon icon-blob"></span>
+								<span class="lb-step">4.</span>
+								<div class="lb-caption">Delfi maze</div>
+						</div>
+
+						<p>Or your team knows how to untangle painiausius puzzles? This Zeroing need to think smart guys and ladies.</p>
+					</div>
+				</div>
+
+				<div class="lb-row">
+					<img src="images/labours/img4.jpg" alt="">
+				</div>
+			</div>
+
+			<!-- |||||||||||||| -->
+
+			<div class="swiper-slide">
+				<div class="lb-row">
+					<div class="lb-block">
+						<img src="images/labours/img5.jpg" alt="">
+					</div>
+					<div class="lb-block">
+						<div class="lb-title">
+								<span class="icon icon-blob"></span>
+								<span class="lb-step">6.</span>
+								<div class="lb-caption">Disc golf</div>
+						</div>
+
+						<p>Have you ever played golf with ... Frisbee. You will be able to affect those who are proud of felicitous hands and eyes of a sniper.</p>
+					</div>
+				</div>
+
+				<div class="lb-row">
+					<div class="lb-title">
+							<span class="icon icon-blob"></span>
+							<span class="lb-step">5.</span>
+							<div class="lb-caption">Construction of Karting</div>
+					</div>
+
+					<p>Compete with Lithuanian spice - karting original was made in Lithuania! Correctly enter the wooden part, sit down to carting and, with the help of team members, Fly to the finish straight towards!</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="slider-arrows slidePrev" id="lbArrowLeft"><span class="icon icon-arrow_l"></span></div>
+		<div class="slider-arrows slideNext" id="lbArrowRight"><span class="icon icon-arrow_r"></span></div>
+	</div>
 </section>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
@@ -717,79 +864,76 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 					<li><a href="http://www.herculestrophy.lt/old/herculestrophyvilnius2015.htm" target="_blank">Archyvas</a></li>
 				</ul>
 			</div>
+
 			<div class="span3">
-				<div class="contacts-title">Kontaktai</div>
+				<div class="contacts-title">Newsletters</div>
 
-				<div class="contact-item">
-					<span class="icon icon-phone"></span>
-					<span class="contact-item__text">+370 676 154 45</span>
-				</div>
-
-				<div class="contact-item">
-					<span class="icon icon-globe"></span>
-					<span class="contact-item__text">info@herculestrophy.lt</span>
-				</div>
-
-				<div class="contacts-title">Sek mus</div>
-
-				<div class="social-links">
-					<a href="https://www.facebook.com/herculestrophybaltics"><span class="icon icon-facebook"></span></a>
-					<a href="https://www.youtube.com/channel/UC_e10TngwJ6LrIVMpr-o9Jw"><span class="icon icon-youtube"></span></a>
-				</div>
+				<ul>
+					<li><a href="" target="_blank">How to prepare</a></li>
+					<li><a href="" target="_blank">Which labour is the best</a></li>
+					<li><a href="" target="_blank">Fill info about your team</a></li>
+					<li><a href="" target="_blank">Labours have been announced</a></li>
+					<li><a href="" target="_blank">All what you need to know about Hercules Trophy</a></li>
+				</ul>
 			</div>
+
 			<div class="span6">
 				<div class="contacts-tab active" id="tab1">Registruokis</div>
-				<div class="contacts-tab" id="tab2">Prisijunk</div>
+				<div class="contacts-tab" id="tab2">Prisidėk ir padėk</div>
 
 				<div class="clr"></div>
 
 				<div class="contacts-tab__content active" data-tab="tab1">
+					<p>Subscribe to learn more about upcoming Hercules Trophy and other company events</p>
+
 					<form action="">
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" id="sName" name="sName" placeholder="First Name">
+							<input class="form-input" type="text" id="sName" name="sName" placeholder="Vardas Pavardė">
 						</div>
 
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" id="sCompany" name="sCompany" placeholder="Company Name">
+							<input class="form-input" type="text" id="sCompany" name="sCompany" placeholder="Įmonė">
 						</div>
 
 						<div class="contacts-form__item">
-							<input class="form-input" type="email" id="sEmail" name="sEmail" placeholder="Email">
+							<input class="form-input" type="email" id="sEmail" name="sEmail" placeholder="El. paštas">
 						</div>
 						
 						
 						<div class="form-btn">
 							<button class="contact-form__btn" id="subscribe">
 								<span class="btn-txt">Registruotis</span>
-								<span class='preloader'><span></span></span>
+								<span class="preloader"><span></span></span>
 							</button>
 						</div>
 					</form>
 				</div>
 
 				<div class="contacts-tab__content" data-tab="tab2">
+					<p>Get involved to lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
 					<form action="">
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" id="iName" name="iName" placeholder="First Name">
+							<input class="form-input" type="text" id="iName" name="iName" placeholder="Vardas Pavardė">
 						</div>
 						
 						<div class="contacts-form__item">
-							<input class="form-input" type="email" id="iEmail" name="iEmail" placeholder="Email">
+							<input class="form-input" type="email" id="iEmail" name="iEmail" placeholder="El. paštas">
 						</div>
 
 						<div class="contacts-form__item">
-							<input class="form-input" type="text" id="city" name="city" placeholder="City">
+							<input class="form-input" type="text" id="city" name="city" placeholder="Miestas">
 						</div>
 
 						<div class="contacts-form__item">
-							<input class="form-input" id="interest" name="interest" type="text" placeholder="Interest">
+							<input class="form-input" id="interest" name="interest" type="text" placeholder="Dominanti sritis (pvz. logistika">
 						</div>
 						
 						
 						<div class="form-btn">
 							<button class="contact-form__btn" id="involved">
-								<span class="btn-txt">Prisijunk</span>
-								<span class='preloader'><span></span></span>
+								<span class="btn-txt">Prisidėk</span>
+								<span class="preloader"><span></span></span>
 							</button>
 						</div>
 					</form>
@@ -801,14 +945,87 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
+<section class="sponsors" id="sponsors">
+	<h2>our sponsors</h2>
+
+	<div id="spSlider" class="sp-slider swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor1.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor2.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor3.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor4.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor5.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor6.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor7.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor8.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor9.jpg" alt=""></a></div>
+			<div class="swiper-slide"><a href="" target="_blank"><img src="images/sponsors/sponsor10.jpg" alt=""></a></div>
+		</div>
+	</div>
+</section>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
 <footer>
-	<ul class="sponsors-list">
-		<li><img src="images/hercules-trophy.png" alt="Hercules Trophy logo"></li>
-		<li><strong>organizuoja</strong></li>
-		<li><img src="images/emovents.png" alt="Emovents logo"></li>
-	</ul>
-	<div class="copyright"><sub>&copy;</sub> Hercules Trophy Baltics / UAB Emovents", 2015 </div>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<div class="footer-title">organized by</div>
+				<a href="http://www.emovents.lt/" title="emovents" target="_blank">
+					<img src="images/emovents.png" alt="">
+				</a>
+			</div>
+
+			<div class="span3">
+				<div class="footer-title">Contacts</div>
+
+				<div class="contact-item">
+					<span class="icon icon-phone"></span>
+					<span class="contact-item__text">+370 676 154 45</span>
+				</div>
+
+				<div class="contact-item">
+					<span class="icon icon-globe"></span>
+					<span class="contact-item__text">info@herculestrophy.lt</span>
+				</div>
+			</div>
+
+			<div class="span3">
+				<div class="footer-title">Follow us</div>
+
+				<a href="" class="contact-item">
+					<span class="icon icon-globe"></span>
+					<span class="contact-item__text">Facebook</span>
+				</a>
+
+				<a href="" class="contact-item">
+					<span class="icon icon-globe"></span>
+					<span class="contact-item__text">Instagram</span>
+				</a>
+			</div>
+
+			<div class="span3">
+				<div class="footer-title">&nbsp;</div>
+
+				<a href="" class="contact-item">
+					<span class="icon icon-globe"></span>
+					<span class="contact-item__text">Twitter</span>
+				</a>
+
+				<a href="" class="contact-item">
+					<span class="icon icon-globe"></span>
+					<span class="contact-item__text">Youtube</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="copyright"><sub>&copy;</sub> Hercules Trophy Baltics / UAB Emovents, 2016 </div>
+	</div>
 </footer>
+
+<!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
+
+<div class="success"><div>Jums pavyko!</div></div>
 
 <!--<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>-->
 
@@ -826,7 +1043,7 @@ Dalyvauti gali kiekvienas! Komandos nariams nereikia turėti jokių specialių f
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-67246964-1', 'auto');
+  ga('create', 'UA-67246964-2', 'auto');
   ga('send', 'pageview');
 
 </script>
