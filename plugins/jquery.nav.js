@@ -45,7 +45,7 @@
 			begin: false,
 			end: false,
 			scrollChange: false,
-			scrollOffset: 96
+			scrollOffset: (window.innerWidth < 1160) ? 56 : 96
 		},
 
 		init: function() {

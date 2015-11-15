@@ -2,11 +2,22 @@ $(function(){
 
   // responsive menu 
 
-  $('#menuOpen').on('click', function(){
+  $('#menuOpen').on('click', function(event){
+    event.preventDefault();
+    event.stopPropagation(); 
     $('#menu').addClass('span10-open');
   });
 
-  $('#menuClose').on('click', function(){
+  $('#menuClose').on('click', function(event){
+    event.preventDefault();
+    $('#menu').removeClass('span10-open');
+  });
+
+  $('#menu').on('click', function(event) { 
+    event.stopPropagation(); 
+  });
+
+  $('body').on('click', function(event) {
     $('#menu').removeClass('span10-open');
   });
 
