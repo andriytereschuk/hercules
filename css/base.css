@@ -2611,27 +2611,37 @@ footer {
     .lb-slider .swiper-slide .lb-row {
       -webkit-order: 2;
           -ms-flex-order: 2;
-              order: 2; }
+              order: 2;
+      position: relative; }
       .lb-slider .swiper-slide .lb-row img {
-        margin: 20px 0 40px 0; }
+        margin: 0; }
     .lb-slider .swiper-slide .lb-row + .lb-row {
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1;
       margin-top: 0;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      overflow: hidden;
+      min-height: 236px; }
+      .lb-slider .swiper-slide .lb-row + .lb-row img {
+        margin: 15px 0 0 -12%;
+        width: 130%; }
   .lb-slider p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 26px; }
   .labours h2 {
     font-size: 32px;
     padding: 32px 0; }
   .lb-block + .lb-block {
     margin-left: 0;
-    display: block; }
-  .lb-block {
     width: 100%;
-    display: none; }
+    display: block; }
+    .lb-block + .lb-block p {
+      padding-left: 130px; }
+  .lb-block:first-child {
+    width: 120px;
+    position: absolute;
+    top: 87px; }
   .lb-title {
     min-height: 80px; }
     .lb-title .icon {

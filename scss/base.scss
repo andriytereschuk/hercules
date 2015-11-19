@@ -2737,9 +2737,10 @@ footer {
 
 	    .lb-row {
 	    	order: 2;
+	    	position: relative;
 
 	    	img {
-	    		margin: 20px 0 40px 0;
+	    		margin: 0;
 	    	}
 	    }
 
@@ -2747,10 +2748,17 @@ footer {
 	    	order: 1;
 	    	margin-top: 0;
 	    	margin-bottom: 20px;
+	    	overflow: hidden;
+	    	min-height: 236px;
+
+	    	img {
+	    		margin: 15px 0 0 -12%;
+	    		width: 130%;
+	    	}
 	    }
 		}
 		p {
-			font-size: 14px;
+			font-size: 13px;
 			line-height: 26px;
 		}	
 	}
@@ -2764,12 +2772,18 @@ footer {
 
 	.lb-block + .lb-block {
 	    margin-left: 0;
+	    width: 100%;
 	    display: block;
+
+	    p {
+				padding-left: 130px;
+	    }
 	}
 
-	.lb-block {
-		width: 100%;
-		display: none;
+	.lb-block:first-child {
+		width: 120px;
+		position: absolute;
+		top: 87px;
 	}
 
 	.lb-title {
