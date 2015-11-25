@@ -21,6 +21,10 @@ $(function(){
     $('#menu').removeClass('span10-open');
   });
 
+  $('nav a').on('click', function() {
+    $('#menu').removeClass('span10-open');
+  });
+
 	// top slider
 
 	var swiper1 = new Swiper('#topSlider', {

@@ -2201,7 +2201,7 @@ footer {
         height: 152px; }
       .gallery-slider .swiper-slide a + a {
         margin-top: 8px; }
-  .slider-arrows {
+  .gallery-slider .slider-arrows {
     display: none; }
   .gallery-links a {
     font-size: 12px;
@@ -2600,8 +2600,10 @@ footer {
       .program .program-item .span3 {
         padding-left: 52px; }
   .lb-slider .swiper-slide {
-    width: 308px;
-    margin: 0 6px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 6px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -2654,6 +2656,22 @@ footer {
     font-size: 20px;
     padding-left: 66px;
     padding-top: 16px; }
+  .lb-slider .slider-arrows {
+    margin-top: -20px;
+    height: 40px;
+    line-height: 40px; }
+    .lb-slider .slider-arrows .icon {
+      font-size: 40px;
+      color: #fff;
+      opacity: 0.5; }
+  .lb-slider .slidePrev {
+    left: 10px; }
+  .lb-slider .slideNext {
+    right: 10px; }
+  .register {
+    background-size: 100%;
+    background-color: #E4E4E4;
+    padding-bottom: 50px; }
   .contacts {
     padding-top: 20px; }
     .contacts .container {

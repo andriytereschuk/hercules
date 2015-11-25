@@ -1989,7 +1989,7 @@ footer {
 		}
 	}
 
-	.slider-arrows {
+	.gallery-slider .slider-arrows {
 		display: none;
 	}
 
@@ -2730,8 +2730,10 @@ footer {
 
 	.lb-slider {
 		.swiper-slide {
-	    width: 308px;
-	    margin: 0 6px;
+	    width: 100%;
+	    margin: 0;
+	    box-sizing: border-box;
+	    padding: 0 6px;
 	    display: flex;
 	    flex-direction: column;
 
@@ -2804,6 +2806,36 @@ footer {
 		font-size: 20px;
 		padding-left: 66px;
 		padding-top: 16px;
+	}
+
+	.lb-slider {
+		.slider-arrows {
+	    margin-top: -20px;
+	    height: 40px;
+	    line-height: 40px;
+
+	    .icon {
+	        font-size: 40px;
+	        color: #fff;
+	        opacity: 0.5;
+	    }
+		}
+
+		.slidePrev {
+		    left: 10px;
+		}
+
+		.slideNext {
+		    right: 10px;
+		}
+	}
+
+	// register
+
+	.register {
+		background-size: 100%;
+		background-color: #E4E4E4;
+		padding-bottom: 50px;
 	}
 
 
